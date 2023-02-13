@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        #instrucoes{
+            display: flex;
+            background-color: mediumseagreen;
+        }
+        .sectiondiv{
+            background-color: aqua;
+        }
+        #nome{
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        body{
+            background-color: lightyellow;
+        }
+        .sectiondiv{
+            background-color: lightcoral;
+        }
+        #instrucoes{
+            background-color: lightcoral;
+        }
+    </style>
+    <script type="text/javascript" src="jsatividade31.js"></script>
+    <title>TRABALHINHO DO 4º BIMESTRE - PARTE 1</title>
+</head>
+<body>
+        <h2 id="nome"> TRABALHINHO DO 4º BIMESTRE - PARTE 1 - BRUNA ALEXANDRE ROMEIRO</h2>
+        <hr>
+        <p>Criar um algoritmo em Javacript que, ao clicar no botão "Analisar Situação da Idade da Pessoa". O software deve analisar se a pessoa tem direito ou não de tirar carteira de habilitação (de acordo com a idade declarada).</p>
+        <p>Após ser realizada a análise, os valores devem ser contabilizados, conforme descrito abaixo.</p>
+        <p>Além disso, o nome da pessoa deve aparecer em um alerta indicando se essa pessoa tem ou não direito a tirar a carteira de habilitação.</p>
+        <section id="instrucoes">
+            <ul>
+                <li>A idade informada não pode ser negativa, nem ser igual a 0 - <strong>0.5 ponto</strong></li>
+                <li>O campo da idade não pode estar vazio - <strong>0.5 ponto</strong></li>
+                <li>O campo do nome da pessoa não pode estar vazio - <strong>0.5 ponto</strong></li>
+                <li>A idade informada não pode ter valor acima de 100 anos - <strong>0.5 ponto</strong></li>
+            </ul>
+            <ol>
+                <li>Contar a quantidade de pessoas que podem a tirar carteira de habilitação - <strong>0.5 ponto</strong></li>
+                <li>Contar a quantidade de pessoas que não podem a tirar carteira de habilitação - <strong>0.5 ponto</strong></li>
+                <li>Contar a quantidade de pessoas que tiveram suas situações analisadas pelo software - <strong>0.5 ponto</strong></li>
+            </ol> 
+        </section>
+        <p>OBS: As pontuações das questões corretas só vogam se os resultados estiverem aparecendo corretamente nos locais determinados abaixo</p>
+        <hr>
+        <h2>Informações da Pessoa</h2>
+        <label for="pessoa">Nome da Pessoa:</label>
+        <input type="text" id="pessoa"/>
+        <label for="idade">Idade da Pessoa:</label>
+        <input type="number" id="idade"/>
+        <p><button id="botao" type="submit" onclick="analisar()">Clique Aqui Para Analisar Situação da Pessoa</button></p>
+        <hr>
+        <h2>Informações das Análises</h2>
+        <section class="sectiondiv">
+            <ul>
+                <li>Mostrar no HTML a quantidade de pessoas que PODEM tirar a carteira de habilitação - <strong>0.5 ponto</strong></li>
+            </ul>
+            <h3>1 - Quantidade de pessoas que podem tirar a carteira de habilitação</h3>
+            <div id="divpodem">0</div>
+        </section>
+        <hr>
+        <section class="sectiondiv">
+            <ul>
+                <li>Mostrar no HTML a quantidade de pessoas que NÃO PODEM tirar a carteira de habilitação - <strong>0.5 ponto</strong></li>
+            </ul>
+            <h3>2 - Quantidade de pessoas que não podem tirar a carteira de habilitação </h3>
+            <div id="divnaopodem">0</div>
+        </section>
+        <hr>
+        <section class="sectiondiv">
+            <ul>
+                <li>Mostrar no HTML a quantidade de pessoas que tiveram as situações analisadas pelo software - <strong>0.5 ponto</strong></li>
+            </ul>
+            <h3>3 - Quantidade de pessoas que tiveram as situações analisadas</h3>
+            <div id="divanalisadas">0</div>
+        </section>
+        <section class="sectiondiv">
+            <h3>4 - Nome(s) da(s) pessoa(s) que possui(em) a maior idade analisada pelo software:</h3>
+            <div id="maioresidades">0</div>
+        </section>
+</body>
+</html>
